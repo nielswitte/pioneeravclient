@@ -15,6 +15,8 @@ class PioneerAvClient(object):
         """ Factory method that returns right client based on given model name. """
         if (model == "VSX-528"):
             return VSX528Telnet(ip,port)
+        elif (model == "VSX-527"):
+            return VSX528Telnet(ip,port)
         elif (model == "VSX-822"):
             return VSX528Telnet(ip,port)
         elif (model == "VSX-1023"):
