@@ -68,9 +68,24 @@ class VSX528Telnet(object):
         self.__sendcmd__("PF")
         sleep(5) # Wait before allowing any other command.
 
+    def toggleMute(self):
+    	"Toggle mute"
+    	if self.getMute() == "MUT1" :
+			self.mute()
+		else :
+			self.unmute()
+
     def mute(self):
         "Mute sound"""
         self.__sendcmd__("MO")
+
+    def unmute(self):
+        "Unmute sound"""
+        self.__sendcmd__("MF")
+
+    def getMute(self):
+        "Get mute status"""
+        return self.__sendcmd__("?M")
 
     def getVol(self):
         "Returns device volume in device scale 0-80"""
