@@ -1,4 +1,7 @@
-__author__ = 'david'
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__ = 'David Encinas Fernández; Niels Witte'
 
 import telnetlib
 import socket
@@ -69,11 +72,11 @@ class VSX528Telnet(object):
         sleep(5) # Wait before allowing any other command.
 
     def toggleMute(self):
-    	"Toggle mute"
-    	if self.getMute() == "MUT1" :
-			self.mute()
-		else :
-			self.unmute()
+        "Toggle mute"
+        if self.getMute() == "MUT1":
+            self.mute()
+        else:
+            self.unmute()
 
     def mute(self):
         "Mute sound"""

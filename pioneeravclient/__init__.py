@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__author__ = 'David Encinas Fernández'
+__author__ = 'David Encinas Fernández, Niels Witte'
 __email__ = 'david@david'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 from clients import *
 
